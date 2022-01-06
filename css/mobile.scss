@@ -235,6 +235,22 @@ $fontfamily: 'Cabin', sans-serif;
                         height: 3px;
                         background-color: #000;
                         border-radius: 5px;
+                        transition: 0.5s;
+                    }
+                }
+                .hamburger.rotate{
+                    span.bar:first-child{
+                        transform: rotate(45deg) translate(7px,7px);
+                        transition: 0.5s;
+                    }
+                    span.bar:nth-child(2){
+                        opacity: 0;
+                        transition: 0.5s;
+                        transform: translateX(20px);
+                    }
+                    span.bar:last-child{
+                        transform: rotate(-45deg) translate(5px,-5px);
+                        transition: 0.5s;
                     }
                 }
                 nav.navbar__spense{

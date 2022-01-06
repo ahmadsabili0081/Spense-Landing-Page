@@ -4,9 +4,15 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('header__Sticky', scrollY > 30);
     btnScroll.classList.toggle('btnScroll', scrollY > 0);
 });
+btnScroll.addEventListener('click', ClickBtn);
+function ClickBtn (){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click', () => {
     const nav = document.querySelector('nav');
+    hamburger.classList.toggle('rotate');
     nav.classList.toggle('navShow');
 });
 
